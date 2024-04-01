@@ -2,7 +2,7 @@
 import { IoMdArrowDropdown } from "react-icons/io";
 
 
-const Navber = ({ children }) => {
+const Navbar = ({ children }) => {
     const navLinks = <>
         <li className="flex gap-3"><a>Products <IoMdArrowDropdown className="text-2xl mt-1" /></a></li>
         <li className="flex gap-3"><a>Docs <IoMdArrowDropdown className="text-2xl mt-1" /></a></li>
@@ -47,4 +47,4 @@ const Navber = ({ children }) => {
     );
 };
 
-export default Navber;
+export default Navbar;
