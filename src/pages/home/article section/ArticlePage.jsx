@@ -1,5 +1,6 @@
 import { FaTwitter } from "react-icons/fa";
 import { ImConnection } from "react-icons/im";
+import ArticleCard from "./ArticleCard";
 
 
 const ArticlePage = () => {
@@ -19,6 +20,14 @@ const ArticlePage = () => {
                     <FaTwitter className="text-2xl " />
                     <ImConnection className="text-2xl" />
                 </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+                <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
+                <ArticleCard />
             </div>
         </div>
     );
