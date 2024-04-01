@@ -4,7 +4,7 @@ import Banner from "./banner/Banner";
 
 const Header = () => {
     return (
-        <div className="bg-[#f9fafc] w-full min-h-screen">
+        <div className="bg-[#f9fafc] w-full h-auto">
             <Navber><Outlet /></Navber>
             <Banner />
         </div>
