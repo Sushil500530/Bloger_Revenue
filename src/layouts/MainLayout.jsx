@@ -1,8 +1,9 @@
+import Header from "../components/header/Header";
 
 const MainLayout = () => {
     return (
         <div>
-            <h1>This is Home Componet</h1>
+           <Header />
         </div>
     );
 };
