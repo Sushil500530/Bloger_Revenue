@@ -1,5 +1,6 @@
 import Banner from "../../components/header/banner/Banner";
 import ArticlePage from "./article section/ArticlePage";
+import IntroducingSection from "./introducing/IntroducingSection";
 
 const Home = () => {
     return (
@@ -7,6 +8,7 @@ const Home = () => {
             <Banner />
             <div className="container mx-auto">
                 <ArticlePage />
+              <IntroducingSection />
             </div>
         </div>
     );
