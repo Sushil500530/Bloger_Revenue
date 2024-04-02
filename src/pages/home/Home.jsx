@@ -3,6 +3,7 @@ import ArticleCard from "./article section/ArticleCard";
 import ArticlePage from "./article section/ArticlePage";
 import IntroducingSection from "./introducing/IntroducingSection";
 import NewsLetter from "./news letter/NewsLetter";
+import Pagination from "./pagination/Pagination";
 
 const Home = () => {
     return (
@@ -17,10 +18,13 @@ const Home = () => {
                     <ArticleCard />
                 </div>
                 <NewsLetter />
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
+                <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <ArticleCard />
+                        <ArticleCard />
+                        <ArticleCard />
+                    </div>
+                    <Pagination />
                 </div>
 
             </div>
