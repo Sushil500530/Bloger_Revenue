@@ -2,6 +2,7 @@ import Banner from "../../components/header/banner/Banner";
 import ArticleCard from "./article section/ArticleCard";
 import ArticlePage from "./article section/ArticlePage";
 import IntroducingSection from "./introducing/IntroducingSection";
+import NewsLetter from "./news letter/NewsLetter";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                     <ArticleCard />
                     <ArticleCard />
                 </div>
+                    <NewsLetter />
             </div>
         </div>
     );
