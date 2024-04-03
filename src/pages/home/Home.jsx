@@ -1,4 +1,5 @@
 import Banner from "../../components/header/banner/Banner";
+import Footer from "../footer/Footer";
 import ArticleCard from "./article section/ArticleCard";
 import ArticlePage from "./article section/ArticlePage";
 import IntroducingSection from "./introducing/IntroducingSection";
@@ -29,6 +30,7 @@ const Home = () => {
                 </div>
             </div>
                <OfferedSection />
+               <Footer />
         </div>
     );
 };
