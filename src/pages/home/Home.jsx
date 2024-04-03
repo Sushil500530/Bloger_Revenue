@@ -3,6 +3,7 @@ import ArticleCard from "./article section/ArticleCard";
 import ArticlePage from "./article section/ArticlePage";
 import IntroducingSection from "./introducing/IntroducingSection";
 import NewsLetter from "./news letter/NewsLetter";
+import OfferedSection from "./offered/OfferedSection";
 import Pagination from "./pagination/Pagination";
 
 const Home = () => {
@@ -26,8 +27,8 @@ const Home = () => {
                     </div>
                     <Pagination />
                 </div>
-
             </div>
+               <OfferedSection />
         </div>
     );
 };
