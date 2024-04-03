@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+      "title": "The Art of Programming",
+      "description": "Exploring the beauty and complexity of coding.",
+      "image": "https://example.com/programming.jpg",
+      "category": "Company",
+      "author": {
+        "authorName": "John Doe",
+        "profile": "https://example.com/johndoe",
+        "date": "2024-04-03"
+      }
+    },
+    {
+        "id":2,
+      "title": "Cooking Tips for Beginners",
+      "description": "A beginner's guide to mastering the kitchen.",
+      "image": "https://example.com/cooking.jpg",
+      "category": "Engineering",
+      "author": {
+        "authorName": "Jane Smith",
+        "profile": "https://example.com/janesmith",
+        "date": "2024-04-02"
+      }
+    },
+    {
+        "id":3,
+      "title": "The Future of Space Exploration",
+      "description": "Unveiling the mysteries of the cosmos.",
+      "image": "https://example.com/space.jpg",
+      "category": "Growth",
+      "author": {
+        "authorName": "Alan Johnson",
+        "profile": "https://example.com/alanjohnson",
+        "date": "2024-04-01"
+      }
+    },
+    {
+        "id":4,
+        "title": "The Power of Meditation",
+        "description": "Exploring the benefits of mindfulness and meditation practices.",
+        "image": "https://example.com/meditation.jpg",
+        "category": "Company",
+        "author": {
+          "authorName": "Emily Johnson",
+          "profile": "https://example.com/emilyjohnson",
+          "date": "2024-04-03"
+        }
+      },
+      {
+        "id":5,
+        "title": "Traveling on a Budget",
+        "description": "Tips and tricks for exploring the world without breaking the bank.",
+        "image": "https://example.com/travel.jpg",
+        "category": "Engineering",
+        "author": {
+          "authorName": "Mark Thompson",
+          "profile": "https://example.com/markthompson",
+          "date": "2024-04-02"
+        }
+      }
+    ]

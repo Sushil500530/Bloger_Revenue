@@ -15,7 +15,6 @@ const ArticleCard = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

@@ -1,18 +1,29 @@
 import { FaTwitter } from "react-icons/fa";
 import { ImConnection } from "react-icons/im";
 import ArticleCard from "./ArticleCard";
-
+import { useEffect, useState } from "react";
+import { IoPlaySharp } from "react-icons/io5";
 
 const ArticlePage = () => {
+    const [articles, setArticles] = useState([]);
+
+
+
+    useEffect(() => {
+        fetch("/public/data.json")
+            .then(res => res.json())
+            .then(data => setArticles(data))
+    }, [])
+
     return (
         <div className="mt-20">
             <div className="flex items-center justify-between flex-col lg:flex-row gap-8">
                 <div>
                     <ul className="flex items-center gap-5 text-base font-medium lg:flex-nowrap flex-wrap">
-                        <li><a href="/" className="bg-green-600 text-white  rounded-full px-4 py-2">All articles</a></li>
-                        <li><a href="/" className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Company</a></li>
-                        <li><a href="/" className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Engineering</a></li>
-                        <li><a href="/" className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Growth</a></li>
+                        <li><button className="bg-green-600 text-white rounded-full px-4 py-2">All articles</button></li>
+                        <li><button className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Company</button></li>
+                        <li><button className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Engineering</button></li>
+                        <li><button className="focus:bg-green-600 focus:text-white rounded-full px-4 py-2">Growth</button></li>
                     </ul>
                 </div>
                 <div className="flex items-center gap-3 text-gray-500">
@@ -22,12 +33,21 @@ const ArticlePage = () => {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
-                <ArticleCard />
+                {
+                    articles?.length > 0 && articles?.map(article => (
+                        <ArticleCard key={article?.title} />
+                    ))
+                }
+                <div className="shadow-md border rounded-md bg-black text-white">
+                    <img src="https://i.ibb.co/31JPR15/banner1.jpg" alt="card-image" className="w-full h-[300px] rounded-t-md rounded-b-[50%]" />
+                    <div className="p-5">
+                        <h1 className="text-xl font-bold my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime? Mollitia consequuntur, soluta similique non cumque.</p>
+                       <button className="px-6 py-2 rounded-full bg-green-600 text-black w-1/2 flex items-center gap-3 mt-8 text-xl">
+                         <IoPlaySharp className="w-10 h-10 rounded-full p-2 bg-black text-white" /> Listen Now
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );
