@@ -38,11 +38,11 @@ const ArticlePage = () => {
                         <ArticleCard key={article?.title} />
                     ))
                 }
-                <div className="shadow-md border rounded-md bg-black text-white">
-                    <img src="https://i.ibb.co/31JPR15/banner1.jpg" alt="card-image" className="w-full h-[300px] rounded-t-md rounded-b-[50%]" />
+                <div className="shadow-md border rounded-md bg-black text-white overflow-hidden">
+                    <img src="https://i.ibb.co/31JPR15/banner1.jpg" alt="card-image" className="w-full h-[300px] rounded-b-[50%]" />
                     <div className="p-5">
-                        <h1 className="text-xl font-bold my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, maxime? Mollitia consequuntur, soluta similique non cumque.</p>
+                        <h1 className="text-3xl font-bold my-3">The Sub Club Postcast</h1>
+                        <p className="text-base ">Interviews and deep dives with the exports behind the biggest apps in the world.</p>
                        <button className="px-6 py-2 rounded-full bg-green-600 text-black w-1/2 flex items-center gap-3 mt-8 text-xl">
                          <IoPlaySharp className="w-10 h-10 rounded-full p-2 bg-black text-white" /> Listen Now
                         </button>
