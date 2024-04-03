@@ -3,7 +3,7 @@ import introImage from "../../../assets/image/intro.png"
 
 const IntroducingSection = () => {
     return (
-        <div className="w-full h-auto">
+        <div className="w-full h-auto my-12">
             <div className="container mx-auto flex flex-col lg:flex-row items-start justify-center pt-12 gap-10 w-full h-auto pb-12">
                 <div className="w-full h-[40vh] lg:w-1/2">
                     <img src={introImage} alt="banner image" className="w-full h-full rounded-md" />

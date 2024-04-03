@@ -13,7 +13,7 @@ const OfferedSection = () => {
                 <div className="w-ful lg:w-[35%]">
                     <h1 className="text-[22px]">"At any level of scale, RevenueCat<br />  just works" </h1>
                     <div className="flex items-center gap-5 my-5">
-                        <img src="" alt="profile-image" className="w-12 h-12 rounded-full bg-white" />
+                        <img src="https://i.ibb.co/4g6f8r5/image.jpg" alt="profile-image" className="w-12 h-12 rounded-full bg-white" />
                         <p className="text-xl">David Smith, Widgetsmith</p>
                     </div>
                     <span className="border-b-2 border-b-red-500 text-base font-medium uppercase">Read case study</span>
