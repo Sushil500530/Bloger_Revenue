@@ -16,11 +16,8 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setArticles(data))
     }, [])
-    
-    const newData = [...articles].sort((a, b) => {
-        return (b.id) - (a.id);
-    });
-    console.log(newData);
+
+
     return (
         <div>
             <Banner />
@@ -33,14 +30,7 @@ const Home = () => {
                     }
                 </div>
                 <NewsLetter />
-                <div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {
-                            newData?.length > 0 && newData?.slice(0,3)?.map(article => <ArticleCard key={article?.id} data={article} />)
-                        }
-                    </div>
-                    <Pagination />
-                </div>
+                <Pagination />
             </div>
             <OfferedSection />
             <Footer />
