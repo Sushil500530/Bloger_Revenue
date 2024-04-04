@@ -7,8 +7,6 @@ import { IoPlaySharp } from "react-icons/io5";
 const ArticlePage = () => {
     const [articles, setArticles] = useState([]);
 
-
-
     useEffect(() => {
         fetch("/public/data.json")
             .then(res => res.json())
@@ -34,8 +32,8 @@ const ArticlePage = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
                 {
-                    articles?.length > 0 && articles?.map(article => (
-                        <ArticleCard key={article?.title} />
+                    articles?.length > 0 && articles?.slice(0,5)?.map(article => (
+                        <ArticleCard key={article?.title} data={article} />
                     ))
                 }
                 <div className="shadow-md border rounded-md bg-black text-white overflow-hidden">

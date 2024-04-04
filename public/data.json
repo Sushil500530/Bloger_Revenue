@@ -99,7 +99,7 @@
         "id":9,
         "title": "Early Stage Subscription App Growth Stack",
         "description": "A scaled-down 'MVP' of the Mobile Growth Stack to help mobile developers get started",
-        "image": "",
+        "image": "https://i.ibb.co/hRmHKMM/growth-stack.jpg",
         "category": "Growth",
         "author": {
           "authorName": "Thomas Petit",
@@ -111,7 +111,7 @@
         "id":10,
         "title": "How AllTrails Leveraged Product-Channel Fit To Scale Its Subscription....",
         "description": "Growth and investment takeaways from a profitable app",
-        "image": "",
+        "image": "https://i.ibb.co/mGCc4v7/alltrains-leveraged.jpg",
         "category": "Growth",
         "author": {
           "authorName": "David Barnard",
@@ -123,7 +123,7 @@
         "id":11,
         "title": "Hybrid SDK Architecture at RevenueCat",
         "description": "Adding a layer to reduce complexity",
-        "image": "https://i.ibb.co/ysrLbHP/google.jpg",
+        "image": "https://i.ibb.co/w6wcy46/hybrid-sdk.png",
         "category": "Engineering",
         "author": {
           "authorName": "Maddie Bey!",
