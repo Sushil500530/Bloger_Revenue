@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Banner from "../../components/header/banner/Banner";
 import Footer from "../footer/Footer";
 import ArticleCard from "./article section/ArticleCard";
@@ -8,6 +9,18 @@ import OfferedSection from "./offered/OfferedSection";
 import Pagination from "./pagination/Pagination";
 
 const Home = () => {
+    const [articles, setArticles] = useState([]);
+
+    useEffect(() => {
+        fetch("/public/data.json")
+            .then(res => res.json())
+            .then(data => setArticles(data))
+    }, [])
+    
+    const newData = [...articles].sort((a, b) => {
+        return (b.id) - (a.id);
+    });
+    console.log(newData);
     return (
         <div>
             <Banner />
@@ -15,22 +28,22 @@ const Home = () => {
                 <ArticlePage />
                 <IntroducingSection />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
+                    {
+                        articles?.length > 0 && articles?.slice(5, 8)?.map(article => <ArticleCard key={article?.id} data={article} />)
+                    }
                 </div>
                 <NewsLetter />
                 <div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <ArticleCard />
-                        <ArticleCard />
-                        <ArticleCard />
+                        {
+                            newData?.length > 0 && newData?.slice(0,3)?.map(article => <ArticleCard key={article?.id} data={article} />)
+                        }
                     </div>
                     <Pagination />
                 </div>
             </div>
-               <OfferedSection />
-               <Footer />
+            <OfferedSection />
+            <Footer />
         </div>
     );
 };

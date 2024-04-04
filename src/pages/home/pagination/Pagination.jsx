@@ -2,7 +2,7 @@ import { GrFormNextLink } from "react-icons/gr";
 
 const Pagination = () => {
     return (
-        <div className="flex items-center lg:justify-between  justify-center flex-col lg:flex-row my-8 lg:gap-24 gap-4">
+        <div className="flex items-center lg:justify-between justify-center flex-col lg:flex-row my-8 lg:gap-24 gap-4">
             <div></div>
                 <div className="flex justify-center items-center gap-3">
                     {Array.from({
