@@ -15,11 +15,11 @@ const Pagination = () => {
                 setCurrentPage(1)
             })
     }, [])
-
+    // sort data 
     const newData = [...articles].sort((a, b) => {
         return (b.id) - (a.id);
     });
-    //   pagination logic
+    //   pagination 
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = newData?.slice(indexOfFirstItem, indexOfLastItem);
@@ -51,7 +51,6 @@ const Pagination = () => {
                     <button className="bg-gradient-to-r from-[#0939e8] to-[#ff0fdb] text-white hover:text-black px-3 py-1 mx-1 rounded-full">8
                     </button>
                 </div>
-
                 <h1 onClick={() => setCurrentPage(currentPage + 1)} className="flex items-center gap-2 font-medium cursor-pointer">Next<GrFormNextLink className="text-2xl text-red-500" /></h1>
             </div>
         </div>
