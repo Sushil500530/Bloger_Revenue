@@ -1,62 +1,134 @@
 [
     {
         "id":1,
-      "title": "The Art of Programming",
-      "description": "Exploring the beauty and complexity of coding.",
-      "image": "https://example.com/programming.jpg",
+      "title": "Here at RevenueCate, Employees are Customers Too",
+      "description": "Sharing ap building ideas in our Employee App Club",
+      "image": "https://i.ibb.co/k3kBmgc/customer-and-employee.png",
       "category": "Company",
       "author": {
-        "authorName": "John Doe",
-        "profile": "https://example.com/johndoe",
-        "date": "2024-04-03"
+        "authorName": "Will Taylor",
+        "profile": "https://i.ibb.co/mT8nkfd/male1.jpg",
+        "date": "May 31, 2022"
       }
     },
     {
         "id":2,
-      "title": "Cooking Tips for Beginners",
-      "description": "A beginner's guide to mastering the kitchen.",
-      "image": "https://example.com/cooking.jpg",
-      "category": "Engineering",
+      "title": "App Store Optimization Guide for Subscription Apps",
+      "description": "Learn how to boost your app's visibility and more",
+      "image": "https://i.ibb.co/ZSvgBsb/optimization-app.jpg",
+      "category": "Growth",
       "author": {
-        "authorName": "Jane Smith",
-        "profile": "https://example.com/janesmith",
-        "date": "2024-04-02"
+        "authorName": "Thomas Kriebernegg",
+        "profile": "https://i.ibb.co/QHRNzSX/male2.jpg",
+        "date": "May 30, 2022"
       }
     },
     {
         "id":3,
-      "title": "The Future of Space Exploration",
-      "description": "Unveiling the mysteries of the cosmos.",
-      "image": "https://example.com/space.jpg",
-      "category": "Growth",
+      "title": "Account deletion rules on the App Store",
+      "description": "Everything you need to know about the new rule",
+      "image": "https://i.ibb.co/SJLDQMk/account-deletion.png",
+      "category": "Engineering",
       "author": {
-        "authorName": "Alan Johnson",
-        "profile": "https://example.com/alanjohnson",
-        "date": "2024-04-01"
+        "authorName": "Corey Rabazinski",
+        "profile": "https://i.ibb.co/XkGGfb2/male3.jpg",
+        "date": "May 26, 2022"
       }
     },
     {
         "id":4,
-        "title": "The Power of Meditation",
-        "description": "Exploring the benefits of mindfulness and meditation practices.",
-        "image": "https://example.com/meditation.jpg",
+        "title": "How We Work Remotely at RevenueCate",
+        "description": "We're a title different then your avarage 9-5 job in daily",
+        "image": "https://i.ibb.co/k4PqK4q/remotely-work.jpg",
         "category": "Company",
         "author": {
-          "authorName": "Emily Johnson",
-          "profile": "https://example.com/emilyjohnson",
-          "date": "2024-04-03"
+          "authorName": "Rachel Wright",
+          "profile": "https://i.ibb.co/TrDKYkX/male4.jpg",
+          "date": "May 16, 2022"
         }
       },
       {
         "id":5,
-        "title": "Traveling on a Budget",
-        "description": "Tips and tricks for exploring the world without breaking the bank.",
-        "image": "https://example.com/travel.jpg",
+        "title": "Google I/O 2022 Announcements",
+        "description": "How the new features and updated play Console will help grow your app bussiness",
+        "image": "https://i.ibb.co/ysrLbHP/google.jpg",
         "category": "Engineering",
         "author": {
-          "authorName": "Mark Thompson",
-          "profile": "https://example.com/markthompson",
-          "date": "2024-04-02"
+          "authorName": "Maddie Bey!",
+          "profile": "https://i.ibb.co/g4shgmq/flemale.jpg",
+          "date": "May 12, 2022"
+        }
+      },
+    {
+        "id":6,
+      "title": "Meet the New RevenueCat SDK",
+      "description": "Our biggest release to date!",
+      "image": "https://i.ibb.co/fFNZ1JS/SDK.png",
+      "category": "Company",
+      "author": {
+        "authorName": "Andy Boedo",
+        "profile": "https://i.ibb.co/mT8nkfd/male1.jpg",
+        "date": "May 09, 2022"
+      }
+    },
+    {
+        "id":7,
+      "title": "Using RevenueCat with Expo's Managed Workflow",
+      "description": "The getting started guide",
+      "image": "https://i.ibb.co/DkZk8HZ/workflow.jpg",
+      "category": "Engineering",
+      "author": {
+        "authorName": "Josh Holtz",
+        "profile": "https://i.ibb.co/QHRNzSX/male2.jpg",
+        "date": "May 21, 2022"
+      }
+    },
+    {
+        "id":8,
+      "title": "How we test SDKs at RevenueCat",
+      "description": "All about testing and updating our iOS SDK",
+      "image": "https://i.ibb.co/2Pnw5gW/SDK-revenue.jpg",
+      "category": "Engineering",
+      "author": {
+        "authorName": "Andy Beodo",
+        "profile": "https://i.ibb.co/XkGGfb2/male3.jpg",
+        "date": "May 06, 2022"
+      }
+    },
+    {
+        "id":9,
+        "title": "Early Stage Subscription App Growth Stack",
+        "description": "A scaled-down 'MVP' of the Mobile Growth Stack to help mobile developers get started",
+        "image": "",
+        "category": "Growth",
+        "author": {
+          "authorName": "Thomas Petit",
+          "profile": "https://i.ibb.co/TrDKYkX/male4.jpg",
+          "date": "May 02, 2022"
+        }
+      },
+      {
+        "id":10,
+        "title": "How AllTrails Leveraged Product-Channel Fit To Scale Its Subscription....",
+        "description": "Growth and investment takeaways from a profitable app",
+        "image": "",
+        "category": "Growth",
+        "author": {
+          "authorName": "David Barnard",
+          "profile": "https://i.ibb.co/g4shgmq/flemale.jpg",
+          "date": "May 15, 2022"
+        }
+      },
+      {
+        "id":11,
+        "title": "Hybrid SDK Architecture at RevenueCat",
+        "description": "Adding a layer to reduce complexity",
+        "image": "https://i.ibb.co/ysrLbHP/google.jpg",
+        "category": "Engineering",
+        "author": {
+          "authorName": "Maddie Bey!",
+          "profile": "https://i.ibb.co/g4shgmq/flemale.jpg",
+          "date": "May 12, 2022"
         }
       }
     ]
