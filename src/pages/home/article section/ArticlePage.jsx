@@ -10,7 +10,7 @@ const ArticlePage = () => {
     const [currentArticle, setCurrentArticle] = useState([]);
 
     useEffect(() => {
-        fetch("/public/data.json")
+        fetch("data.json")
             .then(res => res.json())
             .then(data => {
                 setArticles(data?.slice(0, 5))

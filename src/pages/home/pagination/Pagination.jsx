@@ -8,7 +8,7 @@ const Pagination = () => {
     const [itemsPerPage] = useState(3);
 
     useEffect(() => {
-        fetch("/public/data.json")
+        fetch("data.json")
             .then(res => res.json())
             .then(data => {
                 setArticles(data)
@@ -33,7 +33,7 @@ const Pagination = () => {
                 }
             </div>
             {
-                currentItems?.length <= 0 && <h1 className="text-3xl font-bold text-center items-center justify-center">Page Not Found!</h1>
+                currentItems?.length <= 0 && <h1 className="text-3xl font-bold text-center items-center justify-center my-20">Page Not Found!</h1>
             }
             <div className="flex items-center lg:justify-between justify-center flex-col lg:flex-row my-8 lg:gap-24 gap-4">
                 <div></div>
