@@ -16,9 +16,6 @@ const ArticleCard = ({ data }) => {
                         data?.category === "Growth" && <span className={`px-4 py-2 border-2  rounded-full border-green-600 text-green-600 `}> {data?.category}</span>
                     }
                 </h1>
-
-
-
                 <h1 className="text-xl font-bold my-3"> {data?.title}</h1>
                 <p> {data?.description}</p>
                 <div className="flex items-center gap-3 mt-[10%]">

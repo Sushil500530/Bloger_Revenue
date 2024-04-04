@@ -63,11 +63,11 @@ const ArticlePage = () => {
                     ))
                 }
                 <div className="shadow-md border rounded-md bg-black text-white overflow-hidden">
-                    <img src="https://i.ibb.co/31JPR15/banner1.jpg" alt="card-image" className="w-full h-[300px] rounded-b-[50%]" />
+                    <img src="https://i.ibb.co/Gxy5q0N/subclub-postcat.jpg" alt="card-image" className="w-full h-[300px] rounded-b-[50%]" />
                     <div className="p-5">
                         <h1 className="text-3xl font-bold my-3">The Sub Club Postcast</h1>
                         <p className="text-base ">Interviews and deep dives with the exports behind the biggest apps in the world.</p>
-                        <button className="px-6 py-2 rounded-full bg-green-600 text-black w-1/2 flex items-center gap-3 mt-8 text-xl">
+                        <button className="px-6 py-2 rounded-full bg-green-600 text-black w-[220px] flex items-center gap-3 mt-8 text-xl">
                             <IoPlaySharp className="w-10 h-10 rounded-full p-2 bg-black text-white" /> Listen Now
                         </button>
                     </div>
