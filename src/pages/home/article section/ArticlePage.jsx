@@ -17,8 +17,6 @@ const ArticlePage = () => {
                 setCurrentArticle(data?.slice(0, 5))
                 if (category==='all') {
                     setCurrentArticle(data?.slice(0, 5))
-                    // const filterData = data?.slice(0, 5)?.filter(item => item?.category === category);
-                    // setCurrentArticle(filterData);
                 }
                 if (category==='Company') {
                     const filterData = data?.slice(0, 5)?.filter(item => item?.category === category);

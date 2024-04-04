@@ -41,14 +41,14 @@ const Pagination = () => {
                     {Array.from({
                         length: Math.ceil(newData.length / itemsPerPage),
                     }).map((_, index) => (
-                        <button className={`px-3 py-1 mx-1 rounded-full ${currentPage === index + 1 ? "bg-gradient-to-r from-[#0939e8] to-[#ff0fdb] text-white hover:text-black" : ""
+                        <button className={`px-3 py-1 mx-1 rounded-full ${currentPage === index + 1 ? "bg-green-600 text-white text-xl hover:text-black" : ""
                             }`}
                             key={index + 1}
                             onClick={() => paginate(index + 1)}>
                             {index + 1}
                         </button>
                     ))} ......
-                    <button className="bg-gradient-to-r from-[#0939e8] to-[#ff0fdb] text-white hover:text-black px-3 py-1 mx-1 rounded-full">8
+                    <button className="bg-green-600 text-white hover:text-black px-3 py-1 mx-1 rounded-full">8
                     </button>
                 </div>
                 <h1 onClick={() => setCurrentPage(currentPage + 1)} className="flex items-center gap-2 font-medium cursor-pointer">Next<GrFormNextLink className="text-2xl text-red-500" /></h1>
