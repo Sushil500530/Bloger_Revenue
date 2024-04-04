@@ -22,6 +22,10 @@ const ArticlePage = () => {
                     const filterData = data?.slice(0, 5)?.filter(item => item?.category === category);
                     setCurrentArticle(filterData);
                 }
+                if (category==='Engineering') {
+                    const filterData = data?.slice(0, 5)?.filter(item => item?.category === category);
+                    setCurrentArticle(filterData);
+                }
                 if (category==='Growth') {
                     const filterData = data?.slice(0, 5)?.filter(item => item?.category === category);
                     setCurrentArticle(filterData);
